@@ -3,7 +3,7 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 
 
-dag = DAG('run_job', description='Hello World DAG',
+dag = DAG('example_job', description='Hello World DAG',
           schedule_interval='0/1 * * * *',
           start_date=datetime(2017, 3, 20), catchup=False)
 
